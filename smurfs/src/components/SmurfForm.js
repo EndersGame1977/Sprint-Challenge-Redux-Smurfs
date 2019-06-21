@@ -26,7 +26,7 @@ class SmurfForm extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.submitHandler}>
+            <form className="container" onSubmit={this.submitHandler}>
                 <input
                     type='text'
                     name='name'
@@ -50,7 +50,7 @@ class SmurfForm extends React.Component {
                     onChange={this.handleChange}
                     value={this.state.height}
                 />
-                <button type='submit'>Add Smurf</button>
+                <button className="btn-floating btn-large  blue-grey darken-4" type='submit'>Add Smurf</button>
             </form>
         )
     }

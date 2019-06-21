@@ -3,7 +3,7 @@ import Smurf from './Smurf';
 
 const Smurfs = (props) => {
     return (
-        <div>
+        <div className="container valign-wrapper">
             { props.smurfs.map(smurf => { 
                 return <Smurf key={smurf.id} smurf={smurf} />
             }) }
